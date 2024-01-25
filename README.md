@@ -10,7 +10,7 @@ Follow these steps to run the application locally:
 
 ```bash
 git clone https://github.com/bukhariaujih/cerdas-fa-api.git
-cd fastapi-deepface
+cd cerdas-fa-api
 ```
 
 ### 2. Build and Run Docker Container
