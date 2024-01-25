@@ -1,6 +1,6 @@
-# FastAPI DeepFace Analyzer for CERDAS-UTP
+# FastAPI DeepFace Analyzer API for CERDAS-UTP
 
-This repository serves as a my take-home assignment for the CERDAS-UTP job application. It includes a FastAPI application integrated with the DeepFace library for face analysis.
+This repository is dedicated to a take-home assignment for the CERDAS-UTP job application. It features a FastAPI application seamlessly integrated with the DeepFace library to analyze faces. The primary objective is to deploy machine learning models using FastAPI and Docker. The ultimate goal is to develop a REST API capable of delivering machine learning model predictions through HTTP requests.
 
 ## Getting Started
 
