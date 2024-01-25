@@ -9,7 +9,7 @@ Follow these steps to run the application locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/bukhariaujih/fastapi-deepface.git
+git clone https://github.com/bukhariaujih/cerdas-fa-api.git
 cd fastapi-deepface
 ```
 
