@@ -29,6 +29,48 @@ Send a POST request to analyze a face by replacing `path/to/your/image.jpg` with
 curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/your/image.jpg" http://0.0.0.0:8090/analyze-face
 ```
 
+
+### Usage Example
+
+Here is an example output obtained by analyzing a face using the provided sample image `img2.jpg`:
+
+```json
+[{
+  "emotion": {
+    "angry": 3.2645851680528104e-27,
+    "disgust": 0.0,
+    "fear": 5.393097357478641e-35,
+    "happy": 100.0,
+    "sad": 9.146657923060553e-24,
+    "surprise": 7.29408287242217e-11,
+    "neutral": 4.832107370483785e-10
+  },
+  "dominant_emotion": "happy",
+  "region": {
+    "x": 351,
+    "y": 215,
+    "w": 758,
+    "h": 758
+  },
+  "face_confidence": 9.465124941139948,
+  "age": 31,
+  "gender": {
+    "Woman": 99.9998927116394,
+    "Man": 0.00010439198376843706
+  },
+  "dominant_gender": "Woman",
+  "race": {
+    "asian": 5.968092720877256,
+    "indian": 5.782424975326655,
+    "black": 2.2155818376638696,
+    "white": 35.73490509210885,
+    "middle eastern": 16.80263034136657,
+    "latino hispanic": 33.49636894421207
+  },
+  "dominant_race": "white"
+}]
+```
+
 ## Important Notes
 
 The provided `docker-compose.yml` file includes the necessary configurations for running the FastAPI application with DeepFace integration.
