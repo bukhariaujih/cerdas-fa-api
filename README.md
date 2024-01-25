@@ -1,6 +1,6 @@
-# FastAPI DeepFace Analyzer
+# FastAPI DeepFace Analyzer for CERDAS-UTP
 
-This repository contains a FastAPI application integrated with the DeepFace library for analyzing faces.
+This repository serves as a my take-home assignment for the CERDAS-UTP job application. It includes a FastAPI application integrated with the DeepFace library for face analysis.
 
 ## Getting Started
 
