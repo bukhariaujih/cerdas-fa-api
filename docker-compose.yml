@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  fastapi-deepface:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cerdas_fa_api:latest
+    ports:
+      - "8090:8000"
+      # "host":"container"
+    volumes:
+      - ./app:/app
+    # command: ["gunicorn", "main:app", "-k", "uvicorn.workers.UvicornWorker", "-c", "./gunicorn_conf.py"]
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"] # reload when updated code available
